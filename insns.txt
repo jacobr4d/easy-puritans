@@ -1,0 +1,7 @@
+python3 maketext.py | \
+python3 normalize-spacing.py | \
+python3 normalize_case.py | \
+python3 modernize_spelling.py | \
+fold -s -w 80
+say -f out.txt -o out.flac
+ffmpeg -i out.flac out.mp3
