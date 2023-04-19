@@ -20,14 +20,14 @@ def with_case(word, case):
 d = {}
 with open("lexicon.txt") as f:
     for line in f:
-        old, new = line.split()
-        d[old] = new  
+        k, v = line.split()
+        d[k] = v  
 
 # replace each word in file
 for line in sys.stdin:
     words = line.split()
-    for i, word in enumerate(words):
-        if word.lower() in d:
-            words[i] = with_case(d[word.lower()], case_type(word)) 
+    for i in range(len(words)):
+        if words[i] in d:
+            words[i] = d[words[i]] 
     print(" ".join(words))
 
