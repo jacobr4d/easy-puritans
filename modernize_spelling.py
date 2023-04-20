@@ -1,21 +1,5 @@
 import sys
 
-def case_type(word):
-    if word.isupper():
-        return "upper"
-    elif word[0].islower():
-        return "lower"
-    else:
-        return "capitalized"
-
-def with_case(word, case):
-    if case == "upper":
-        return word.upper()
-    elif case == "lower":
-        return word.lower()
-    else:
-        return word[0].upper() + word[1:].lower()
-
 # load lexicon into memory as dict
 d = {}
 with open("lexicon.txt") as f:
@@ -23,11 +7,25 @@ with open("lexicon.txt") as f:
         k, v = line.split()
         d[k] = v  
 
+punct = {',', '.', ':', ';', '?', '!'}
+
+# i is the first non-punct, j is first end punct
+def split_punct(word):
+    i = 0
+    while i < len(word) and word[i] in punct:
+        i += 1
+    j = len(word)
+    while j > 0 and word[j-1] in punct:
+        j -= 1
+    return (word[:i], word[i:j], word[j:]) if word[i:j] else (word[:i], '', '')
+
 # replace each word in file
 for line in sys.stdin:
     words = line.split()
     for i in range(len(words)):
-        if words[i] in d:
-            words[i] = d[words[i]] 
-    print(" ".join(words))
+        lpunct, word, rpunct = split_punct(words[i])
+        print(lpunct, end='')
+        print(d[word] if word in d else word, end='')
+        print(rpunct, end=' ')
+    print()
 
