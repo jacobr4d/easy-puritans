@@ -4,7 +4,7 @@ import sys
 d = {}
 with open("lexicon.txt") as f:
     for line in f:
-        k, v = line.split()
+        k, v = line.split()[:2]
         d[k] = v  
 
 punct = {',', '.', ':', ';', '?', '!'}
