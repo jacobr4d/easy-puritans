@@ -17,8 +17,7 @@ def sstrip(s):
 def printsstrip(s):
     print(sstrip(s), end='')
 
-tree = ET.parse('2.xml');
-root = tree.getroot()
+root = ET.fromstring(sys.stdin.read());
 notes = root.findall(".//NOTE")
 subnotes = root.findall(".//NOTE//*")
 

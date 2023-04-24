@@ -7,7 +7,7 @@ with open("lexicon.txt") as f:
         k, v = line.split()[:2]
         d[k] = v  
 
-punct = {',', '.', ':', ';', '?', '!'}
+punct = {',', '.', ':', ';', '?', '!', '(', ')'}
 
 # i is the first non-punct, j is first end punct
 def split_punct(word):
