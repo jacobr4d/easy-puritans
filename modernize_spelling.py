@@ -1,12 +1,5 @@
 import sys
 
-# load lexicon into memory as dict
-d = {}
-with open("lexicon.txt") as f:
-    for line in f:
-        k, v = line.split()[:2]
-        d[k] = v  
-
 punct = {',', '.', ':', ';', '?', '!', '(', ')'}
 
 # i is the first non-punct, j is first end punct
@@ -18,6 +11,13 @@ def split_punct(word):
     while j > 0 and word[j-1] in punct:
         j -= 1
     return (word[:i], word[i:j], word[j:]) if word[i:j] else (word[:i], '', '')
+
+# load lexicon into memory as dict
+d = {}
+with open("lexicon.txt") as f:
+    for line in f:
+        k, v = line.split()[:2]
+        d[k] = v  
 
 # replace each word in file
 for line in sys.stdin:

@@ -1,10 +1,12 @@
 abhorre abhor
 aduancement advancement
+affoord afford
 aliue alive
 alwaies always
 aptnesse aptness
 atheisme atheism
 auoid avoid
+becomming becoming
 behalfe bahalf
 behalfe behalf
 beleeue believe 
@@ -34,6 +36,7 @@ couenant covenant
 couetous covetous
 cryes cries
 curtaine curtain
+custome custom
 darknes darkness
 dauid david
 deliuer deliver
@@ -53,6 +56,7 @@ downe down
 drinke drink
 dwel dwell
 easie easy
+effectuall effectual
 emptines emptiness
 endeauour endeavor
 endeuour endevour
@@ -85,6 +89,7 @@ generall general
 giue give
 giues gives
 glorifie glorify
+godlinesse godliness
 goe go
 gospell gospel
 greatnesse greatness
@@ -112,9 +117,11 @@ hypocrisie hypocrisy
 iesus jesus
 iews jews
 inabilitie inability
+inabled enabled
 iniquitie iniquity
 iniustice injustice
 instrumentall instrumental
+ioyned joined
 iudge judge
 iudgeth judgeth
 iust just
@@ -143,6 +150,7 @@ obiect object
 offēces offences
 onely only
 opportunitie opportunity
+ordinarie ordinary
 owne own
 partie party
 perceiues perceives
@@ -157,11 +165,13 @@ proceede proceed
 pronenes proneness
 proofe proof
 raigne reign
+reade read
 receiue receive
 recouereth recovereth
 reiect reject
 remoued removed
 renouation renovation
+reproofe reproof
 reuenge revenge
 reuerence reverence
 reuiue revive
@@ -194,11 +204,13 @@ sonnes sons
 soule soul
 speciall special
 spightfull spiteful
+spirituall spiritual
 stoupe stoop
 subiect subject
 subiects subjects
 tenour tenor
 terme term
+therfore therefore
 therwith therewith
 thirstie thirsty
 thorowfares thoroughfares
@@ -241,6 +253,7 @@ vtterly utterly
 wantonnesse wantonness
 weauer weaver
 wee we
+whensoeuer whensoever
 wherin wherein
 whosoeuer whosoever
 whō whom
